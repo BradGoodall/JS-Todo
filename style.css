@@ -1,0 +1,23 @@
+body {
+    font-size: larger;
+}
+
+.checked {
+    color: gray;
+    text-decoration: line-through;
+}
+
+.delBtn {
+    color: red;
+    font-weight: bold;
+    padding: 5px;
+    margin-left: 15px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 5px 0 5px 0;
+}
