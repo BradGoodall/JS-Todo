@@ -83,6 +83,19 @@ function toggleDelete() {
   }
 }
 
+// Remove completed items
+function removeCompleted() {
+    let itemsToDelete = [];
+
+    for (let i = 1; i <= todoList.childElementCount; i++) {
+        if (todoList.childNodes[i].childNodes[1].checked === true) {
+            itemsToDelete.push(todoList.childNodes[i].childNodes[1].id)
+        }
+    }
+
+    itemsToDelete.forEach((e) => {deleteItem(e)})
+}
+
 // Check if "Enter" is pressed in the text box
 todoInput.addEventListener("keypress", function (event) {
   if (event.key === "Enter") {
