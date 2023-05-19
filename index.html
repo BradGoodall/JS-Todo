@@ -5,22 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TODO List</title>
+    <title>Todo List</title>
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
-    </style>
+        @import url('https://fonts.googleapis.com/css2?family=Pathway+Extreme&display=swap');
+      </style>
 </head>
 
 <body>
+    <div class="header">
+        <img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/512px-Unofficial_JavaScript_logo_2.svg.png" alt="Javascript Logo">
     <h1>Todo List</h1>
+    </div>
+    
     <div>
+        <div class="note-div">
+            <p class="note">
+                I created this handy Todo List as a way to sharpen my skills in Javascript and DOM Manipulation. <br>
+                It's built purely with HTML, CSS, and Javascript, and uses Local Storage to save and load tasks.
+            </p>
+            <p class="right-align">
+                - Brad Goodall <br>
+            </p>
+        </div>
         <p>
+            <h3>Enter a Task:</h3><br>
             <input type="text" id="todoInput"><br>
         </p>
         <p>
-            <button id="btnAdd" onclick="addItem(todoInput.value, '', false)" type="submit">Add New Item</button>
-            <button id="btnDel" onclick="removeCompleted()">Remove Completed Items</button>
+            <button id="btnAdd" onclick="addTask(todoInput.value, '', false)" type="submit">Add New Task</button>
+            <button id="btnRemove" onclick="removeCompleted()">Remove Completed Tasks</button>
             <button id="btnDel" onclick="toggleDelete()">Toggle Delete Mode</button>
         </p>
     </div>
@@ -28,7 +43,7 @@
     <div id="todoDiv">
         <ul id="todoList">
         </ul>
-        <p id="itemCount">No Items</p>
+        <p id="taskCount">No Tasks</p>
     </div>
 
     <script src="scripts.js"></script>

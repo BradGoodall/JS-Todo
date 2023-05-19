@@ -1,5 +1,5 @@
 body {
-    background-color: #EDE4E0;
+    background-color: #EEEEEE;
     font-family: 'Oswald', sans-serif;
     text-align: center;
 }
@@ -9,16 +9,39 @@ body {
     text-decoration: line-through;
 }
 
+button {
+    font-family: 'Oswald', sans-serif;
+    padding: 10px;
+    background-color: #47A992;
+    color: #EEEEEE;
+    border-style: none;
+    font-size: 25px;
+    margin: 10px;
+    box-shadow: 4px 4px 8px black;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color: #EEEEEE;
+    color: black;
+}
+
 .delBtn {
-    background-color: brown;
+    background-color: #845460;
+    border: solid 1px;
     border-color: red;
     color: white;
-    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    margin-right: 20px;
+    top: 10px;
+    box-shadow:none;
+    padding: 3px;
 }
 
 #todoDiv {
     margin: auto;
-    width: 50%;
+    width: 30%;
 }
 
 ul {
@@ -27,14 +50,24 @@ ul {
 }
 
 li {
-    padding: 15px 0 15px 0;
+    padding: 10px;
     font-size: 20px;
+    margin: 0;
+    
 }
 
 h1 {
-    color: #9F8772;
-    font-size: 50px;
+    color: #47A992;
+    font-size: 100px;
+    text-shadow: 2px 2px 4px black;
+    display: inline;
+}
+
+h3 {
+    color: #47A992;
+    font-size: 40px;
     text-shadow: 1px 1px 2px black;
+    margin: 0;
 }
 
 .hide {
@@ -42,19 +75,54 @@ h1 {
 }
 
 .listBorder {
-    border: solid 3px #9F8772;
+    border: solid 3px #47A992;
     border-radius: 10px;
-}
-
-button {
-    padding: 10px;
-    background-color: #9F8772;
-    border-style: none;
-    color: white;
-    margin: 0;
 }
 
 #todoInput {
     height: 40px;
     width: 30%;
+}
+
+.checkbox {
+    transform: scale(1.5);
+    margin-right: 10px;
+    position: relative;
+    bottom: 3px;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 10px;
+    margin-right: 20px;
+    box-shadow: 2px 2px 4px black;
+}
+
+.toggled {
+    background-color: #845460
+}
+
+.note {
+    background-color: white;
+    border: solid 4px black;
+    border-radius: 20px 20px 0 20px;
+    padding: 30px;
+    font-family: 'Pathway Extreme', sans-serif;
+    box-shadow: 4px 4px 8px black;
+}
+
+.note-div {
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+.header {
+    margin-bottom: 50px;
+}
+
+.right-align {
+    text-align: right;
+    font-size: large;
 }
