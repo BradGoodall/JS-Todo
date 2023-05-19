@@ -7,18 +7,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TODO List</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+    </style>
 </head>
 
 <body>
+    <h1>Todo List</h1>
     <div>
-        <h1>TODO List</h1>
-        <input type="text" name="" id="todoInput">
-        <button id="btnAdd" onclick="addItem()">Add Item</button>
+        <p>
+            <input type="text" id="todoInput"><br>
+        </p>
+        <p>
+            <button id="btnAdd" onclick="addItem(todoInput.value, '', false)" type="submit">Add New Item</button>
+            <button id="btnDel" onclick="toggleDelete()">Toggle Delete Mode</button>
+        </p>
     </div>
 
-    <div>
+    <div id="todoDiv">
         <ul id="todoList">
         </ul>
+        <p id="itemCount">No Items</p>
     </div>
 
     <script src="scripts.js"></script>

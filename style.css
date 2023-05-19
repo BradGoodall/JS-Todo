@@ -1,5 +1,7 @@
 body {
-    font-size: larger;
+    background-color: #EDE4E0;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
 }
 
 .checked {
@@ -8,16 +10,51 @@ body {
 }
 
 .delBtn {
-    color: red;
+    background-color: brown;
+    border-color: red;
+    color: white;
     font-weight: bold;
-    padding: 5px;
-    margin-left: 15px;
+}
+
+#todoDiv {
+    margin: auto;
+    width: 50%;
 }
 
 ul {
     list-style-type: none;
+    text-align: left;
 }
 
 li {
-    padding: 5px 0 5px 0;
+    padding: 15px 0 15px 0;
+    font-size: 20px;
+}
+
+h1 {
+    color: #9F8772;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+}
+
+.hide {
+    display: none;
+}
+
+.listBorder {
+    border: solid 3px #9F8772;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #9F8772;
+    border-style: none;
+    color: white;
+    margin: 0;
+}
+
+#todoInput {
+    height: 40px;
+    width: 30%;
 }
